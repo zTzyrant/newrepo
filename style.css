@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu Mono', monospace;
+}
+body{
+    background: linear-gradient(45deg,rgb(72, 69, 247), red);
+    height: 100vh;
+    
+}
+#container{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('background.png');
+    box-shadow: 0 15px 30px rgba(0, 0, 0,.5);
+}
+
+#container .content{
+    max-width: 600px;
+    text-align: center;
+}
+#container .content h2{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 1000;
+}
+#container .content h4{
+    position: relative;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #111;
+    background: #fff;
+    font-weight: 300;
+    padding: 10px 20px;
+    display: inline-block;
+}
+#container .content p{
+    color: #fff;
+    font-size: 25px;
+}
+#container .content  button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    background: #ff0565;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 25px;
+    border-radius: 25px;
+    border: none;
+}
+  
+#container .content  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+#container .content  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+ }
+  
+#container .content  button:hover span {
+    padding-right: 25px;
+}
+  
+#container .content  button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* This Line For Container 2*/
+
+#container2{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    border-radius: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: lime;
+    background-color: black;
+    box-shadow: 0 15px 30px  rgb(18, 219, 45);
+}
+#container2 .content{
+    max-width: 600px;
+}
+#container2 .content  button {
+    position: fixed;
+    right: 11%;
+    bottom: 11%;
+    display: inline-block;
+    padding: 10px 25px;
+    background: #ff0565;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 25px;
+    border-radius: 25px;
+    border: none;
+  }
+  
+#container2 .content  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+#container2 .content  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+#container2 .content  button:hover span {
+    padding-right: 25px;
+  }
+  
+#container2 .content  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+  @media only screen and (min-width : 285px) and (max-width : 480px) {
+    #container .content{
+        max-width: 80%;
+        font-size: larger;
+    }
+    #container2 .content{
+        max-width: 80%;
+        font-size: larger;
+    }
+  }
